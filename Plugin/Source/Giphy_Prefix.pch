@@ -1,0 +1,25 @@
+//
+//  Giphy_Prefix.pch
+//  Giphy
+//
+//  Created by Fabian Jäger on 15/09/15.
+//  Copyright (c) 2015 Mailbutler. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#define PLUGIN_BUNDLE       [NSBundle bundleForClass:[GYMailBundle class]]
+
+#import <Cocoa/Cocoa.h>
+
+#import "CompatibilityHelper.h"
+
+#import "GYMailBundle.h"
+
+#ifdef PLUGIN_BUNDLE
+#undef NSLocalizedString
+#define NSLocalizedString(key,comment)   NSLocalizedStringFromTableInBundle(key, nil, PLUGIN_BUNDLE, comment)
+#define NSLocalizedVariableString(key,comment)   NSLocalizedStringFromTableInBundle(key, nil, PLUGIN_BUNDLE, comment)
+#endif
+
+#endif

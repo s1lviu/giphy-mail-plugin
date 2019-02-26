@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FEBCA0421F32B8D004CD13F /* GYGiphyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBC9FF21F32B8D004CD13F /* GYGiphyViewController.m */; };
+		1FEBCA0521F32B8D004CD13F /* GYGiphyCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBCA0021F32B8D004CD13F /* GYGiphyCollectionViewItem.m */; };
+		1FEBCA0621F32B8D004CD13F /* GYRemoteImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBCA0121F32B8D004CD13F /* GYRemoteImageView.m */; };
+		1FEBCA0A21F32CAE004CD13F /* ComposeViewController+Giphy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBCA0821F32CAE004CD13F /* ComposeViewController+Giphy.m */; };
+		1FEBCA0D21F330E8004CD13F /* CompatibilityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBCA0C21F330E8004CD13F /* CompatibilityHelper.m */; };
+		1FEBCA0F21F332C8004CD13F /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEBCA0E21F332C8004CD13F /* AFNetworking.framework */; };
+		1FEBCA1021F3360D004CD13F /* GiphyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEBC9FD21F32B8D004CD13F /* GiphyView.xib */; };
+		1FEBCA1221F3363D004CD13F /* AFNetworking.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEBCA0E21F332C8004CD13F /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FEBCA1521F33682004CD13F /* TB_Giphy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1FEBCA1321F33682004CD13F /* TB_Giphy.pdf */; };
+		1FEBCA1621F33682004CD13F /* Giphy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEBCA1421F33682004CD13F /* Giphy.png */; };
+		1FEBCA1721F3376C004CD13F /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF9C9A1BA83BE000372FA3 /* JRSwizzle.m */; };
+		1FEBCA1921F339FD004CD13F /* PowerByGiphyTemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEBCA1821F339FD004CD13F /* PowerByGiphyTemplate.png */; };
+		1FEBCA3221F33E69004CD13F /* Giphy.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 1FEBCA3121F33E69004CD13F /* Giphy.iconset */; };
+		1FEF9C9F1BA83F8E00372FA3 /* GYMailBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF9C9E1BA83F8E00372FA3 /* GYMailBundle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F1604FD1BA850F300804562 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1FEBCA1221F3363D004CD13F /* AFNetworking.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1FEBC9FC21F32B8D004CD13F /* GYGiphyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYGiphyViewController.h; sourceTree = "<group>"; };
+		1FEBC9FD21F32B8D004CD13F /* GiphyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiphyView.xib; sourceTree = "<group>"; };
+		1FEBC9FE21F32B8D004CD13F /* GYGiphyCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYGiphyCollectionViewItem.h; sourceTree = "<group>"; };
+		1FEBC9FF21F32B8D004CD13F /* GYGiphyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYGiphyViewController.m; sourceTree = "<group>"; };
+		1FEBCA0021F32B8D004CD13F /* GYGiphyCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYGiphyCollectionViewItem.m; sourceTree = "<group>"; };
+		1FEBCA0121F32B8D004CD13F /* GYRemoteImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYRemoteImageView.m; sourceTree = "<group>"; };
+		1FEBCA0721F32C7A004CD13F /* GYRemoteImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYRemoteImageView.h; sourceTree = "<group>"; };
+		1FEBCA0821F32CAE004CD13F /* ComposeViewController+Giphy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ComposeViewController+Giphy.m"; sourceTree = "<group>"; };
+		1FEBCA0921F32CAE004CD13F /* ComposeViewController+Giphy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ComposeViewController+Giphy.h"; sourceTree = "<group>"; };
+		1FEBCA0B21F330E8004CD13F /* CompatibilityHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompatibilityHelper.h; sourceTree = "<group>"; };
+		1FEBCA0C21F330E8004CD13F /* CompatibilityHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompatibilityHelper.m; sourceTree = "<group>"; };
+		1FEBCA0E21F332C8004CD13F /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = "<group>"; };
+		1FEBCA1321F33682004CD13F /* TB_Giphy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TB_Giphy.pdf; sourceTree = "<group>"; };
+		1FEBCA1421F33682004CD13F /* Giphy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Giphy.png; sourceTree = "<group>"; };
+		1FEBCA1821F339FD004CD13F /* PowerByGiphyTemplate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PowerByGiphyTemplate.png; sourceTree = "<group>"; };
+		1FEBCA3121F33E69004CD13F /* Giphy.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Giphy.iconset; sourceTree = "<group>"; };
+		1FEF9C871BA833A900372FA3 /* Giphy.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Giphy.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FEF9C941BA8341900372FA3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FEF9C991BA83BE000372FA3 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		1FEF9C9A1BA83BE000372FA3 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		1FEF9C9C1BA83E7B00372FA3 /* Giphy_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Giphy_Prefix.pch; sourceTree = "<group>"; };
+		1FEF9C9D1BA83F8E00372FA3 /* GYMailBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMailBundle.h; sourceTree = "<group>"; };
+		1FEF9C9E1BA83F8E00372FA3 /* GYMailBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMailBundle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FEF9C841BA833A900372FA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEBCA0F21F332C8004CD13F /* AFNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F8266441BAADFFE009C98E8 /* Mail Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1FEBCA0921F32CAE004CD13F /* ComposeViewController+Giphy.h */,
+				1FEBCA0821F32CAE004CD13F /* ComposeViewController+Giphy.m */,
+			);
+			path = "Mail Categories";
+			sourceTree = "<group>";
+		};
+		1F8266451BAAE03C009C98E8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1FEBCA3121F33E69004CD13F /* Giphy.iconset */,
+				1FEBCA1421F33682004CD13F /* Giphy.png */,
+				1FEBCA1321F33682004CD13F /* TB_Giphy.pdf */,
+				1FEBCA1821F339FD004CD13F /* PowerByGiphyTemplate.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		1FEF9C7E1BA833A900372FA3 = {
+			isa = PBXGroup;
+			children = (
+				1FEF9C911BA8341900372FA3 /* Plugin */,
+				1FEF9C881BA833A900372FA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FEF9C881BA833A900372FA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF9C871BA833A900372FA3 /* Giphy.mailbundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FEF9C911BA8341900372FA3 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF9C951BA8341900372FA3 /* Source */,
+				1FEF9C931BA8341900372FA3 /* Resources */,
+				1FEF9C921BA8341900372FA3 /* Frameworks */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		1FEF9C921BA8341900372FA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FEBCA0E21F332C8004CD13F /* AFNetworking.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FEF9C931BA8341900372FA3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F8266451BAAE03C009C98E8 /* Images */,
+				1FEF9C941BA8341900372FA3 /* Info.plist */,
+				1FEBC9FD21F32B8D004CD13F /* GiphyView.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1FEF9C951BA8341900372FA3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1F8266441BAADFFE009C98E8 /* Mail Categories */,
+				1FEF9C981BA83BE000372FA3 /* External */,
+				1FEF9C9C1BA83E7B00372FA3 /* Giphy_Prefix.pch */,
+				1FEF9C9D1BA83F8E00372FA3 /* GYMailBundle.h */,
+				1FEF9C9E1BA83F8E00372FA3 /* GYMailBundle.m */,
+				1FEBC9FE21F32B8D004CD13F /* GYGiphyCollectionViewItem.h */,
+				1FEBCA0021F32B8D004CD13F /* GYGiphyCollectionViewItem.m */,
+				1FEBC9FC21F32B8D004CD13F /* GYGiphyViewController.h */,
+				1FEBC9FF21F32B8D004CD13F /* GYGiphyViewController.m */,
+				1FEBCA0721F32C7A004CD13F /* GYRemoteImageView.h */,
+				1FEBCA0121F32B8D004CD13F /* GYRemoteImageView.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1FEF9C981BA83BE000372FA3 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				1FEBCA0B21F330E8004CD13F /* CompatibilityHelper.h */,
+				1FEBCA0C21F330E8004CD13F /* CompatibilityHelper.m */,
+				1FEF9C991BA83BE000372FA3 /* JRSwizzle.h */,
+				1FEF9C9A1BA83BE000372FA3 /* JRSwizzle.m */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FEF9C861BA833A900372FA3 /* Giphy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FEF9C8E1BA833A900372FA3 /* Build configuration list for PBXNativeTarget "Giphy" */;
+			buildPhases = (
+				1FEF9C831BA833A900372FA3 /* Sources */,
+				1FEF9C841BA833A900372FA3 /* Frameworks */,
+				1FEF9C851BA833A900372FA3 /* Resources */,
+				1F1604FD1BA850F300804562 /* Copy Frameworks */,
+				1F497D161D2E587F00DE1FDD /* Update Version */,
+				1FBC165C21EB2D7C006DC579 /* Finalize Plugin */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Giphy;
+			productName = MailButler;
+			productReference = 1FEF9C871BA833A900372FA3 /* Giphy.mailbundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FEF9C7F1BA833A900372FA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GY;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Mailbutler;
+				TargetAttributes = {
+					1FEF9C861BA833A900372FA3 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 75PWYP7Y7K;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 1FEF9C821BA833A900372FA3 /* Build configuration list for PBXProject "Giphy" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FEF9C7E1BA833A900372FA3;
+			productRefGroup = 1FEF9C881BA833A900372FA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FEF9C861BA833A900372FA3 /* Giphy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FEF9C851BA833A900372FA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEBCA3221F33E69004CD13F /* Giphy.iconset in Resources */,
+				1FEBCA1921F339FD004CD13F /* PowerByGiphyTemplate.png in Resources */,
+				1FEBCA1621F33682004CD13F /* Giphy.png in Resources */,
+				1FEBCA1521F33682004CD13F /* TB_Giphy.pdf in Resources */,
+				1FEBCA1021F3360D004CD13F /* GiphyView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F497D161D2E587F00DE1FDD /* Update Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Update Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "#\n# Set the build number to the current git commit count.\n# If we're using the Dev scheme, then we'll suffix the build\n# number with the current branch name, to make collisions\n# far less likely across feature branches.\n# Based on: http://w3facility.info/question/how-do-i-force-xcode-to-rebuild-the-info-plist-file-in-my-project-every-time-i-build-the-project/\n#\n# Updated with dSYM handling from http://yellowfeather.co.uk/blog/auto-incrementing-build-number-in-xcode-revisited/\n#\n\ngit=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list HEAD --count`\nappVersion=\"${appBuild}\"\n\nif [ $CONFIGURATION = \"Debug\" ]; then\n  branchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n  appVersion=\"${appBuild}-${branchName}\"\nelif [[ $CONFIGURATION = \"Beta\" ]]; then\n  appVersion=\"${appBuild}b\"\nfi\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Add :CFBundleShortVersionString string $appVersion\" \"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\"\nif [ -e \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\" ]; then\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\"\n    /usr/libexec/PlistBuddy -c \"Add :CFBundleShortVersionString string $appVersion\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\"\nfi\n\necho \"Updated the build number ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n";
+		};
+		1FBC165C21EB2D7C006DC579 /* Finalize Plugin */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Finalize Plugin";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/Plugin/External/MailMessageUUIDs/GetLatestIntoPlugin.sh 10.11\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FEF9C831BA833A900372FA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEBCA1721F3376C004CD13F /* JRSwizzle.m in Sources */,
+				1FEBCA0421F32B8D004CD13F /* GYGiphyViewController.m in Sources */,
+				1FEBCA0D21F330E8004CD13F /* CompatibilityHelper.m in Sources */,
+				1FEBCA0521F32B8D004CD13F /* GYGiphyCollectionViewItem.m in Sources */,
+				1FEF9C9F1BA83F8E00372FA3 /* GYMailBundle.m in Sources */,
+				1FEBCA0A21F32CAE004CD13F /* ComposeViewController+Giphy.m in Sources */,
+				1FEBCA0621F32B8D004CD13F /* GYRemoteImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1FEF9C8C1BA833A900372FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"BETA=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MAIL_OSX_SDK_MAJOR = 10;
+				MAIL_OSX_SDK_MINOR = 14;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1FEF9C8D1BA833A900372FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MAIL_OSX_SDK_MAJOR = 10;
+				MAIL_OSX_SDK_MINOR = 14;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1FEF9C8F1BA833A900372FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Plugin/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Plugin/Source/Giphy_Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/Plugin/Frameworks/include/**",
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(PROJECT_DIR)/Plugin/External/Class-Dumps/macosx$(MAIL_OSX_SDK_MAJOR).$(MAIL_OSX_SDK_MINOR)/**",
+				);
+				INFOPLIST_FILE = Plugin/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Mail/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Plugin/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"-DGTLR_BUILT_AS_FRAMEWORK=1",
+					"-DMAIL_OSX_SDK_MAJOR=$(MAIL_OSX_SDK_MAJOR)",
+					"-DMAIL_OSX_SDK_MINOR=$(MAIL_OSX_SDK_MINOR)",
+				);
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mailbutler.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Giphy;
+				WRAPPER_EXTENSION = mailbundle;
+			};
+			name = Debug;
+		};
+		1FEF9C901BA833A900372FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Plugin/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Plugin/Source/Giphy_Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/Plugin/Frameworks/include/**",
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(PROJECT_DIR)/Plugin/External/Class-Dumps/macosx$(MAIL_OSX_SDK_MAJOR).$(MAIL_OSX_SDK_MINOR)/**",
+				);
+				INFOPLIST_FILE = Plugin/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Mail/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Plugin/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"-DGTLR_BUILT_AS_FRAMEWORK=1",
+					"-DMAIL_OSX_SDK_MAJOR=$(MAIL_OSX_SDK_MAJOR)",
+					"-DMAIL_OSX_SDK_MINOR=$(MAIL_OSX_SDK_MINOR)",
+				);
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mailbutler.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Giphy;
+				WRAPPER_EXTENSION = mailbundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FEF9C821BA833A900372FA3 /* Build configuration list for PBXProject "Giphy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEF9C8C1BA833A900372FA3 /* Debug */,
+				1FEF9C8D1BA833A900372FA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FEF9C8E1BA833A900372FA3 /* Build configuration list for PBXNativeTarget "Giphy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEF9C8F1BA833A900372FA3 /* Debug */,
+				1FEF9C901BA833A900372FA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FEF9C7F1BA833A900372FA3 /* Project object */;
+}
