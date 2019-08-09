@@ -38,6 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F7CCF9A22FD718A0071F609 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		1FEBC9FC21F32B8D004CD13F /* GYGiphyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYGiphyViewController.h; sourceTree = "<group>"; };
 		1FEBC9FD21F32B8D004CD13F /* GiphyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiphyView.xib; sourceTree = "<group>"; };
 		1FEBC9FE21F32B8D004CD13F /* GYGiphyCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYGiphyCollectionViewItem.h; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		1FEF9C7E1BA833A900372FA3 = {
 			isa = PBXGroup;
 			children = (
+				1F7CCF9A22FD718A0071F609 /* Config.xcconfig */,
 				1FEF9C911BA8341900372FA3 /* Plugin */,
 				1FEF9C881BA833A900372FA3 /* Products */,
 			);
@@ -210,7 +212,7 @@
 			};
 			buildConfigurationList = 1FEF9C821BA833A900372FA3 /* Build configuration list for PBXProject "Giphy" */;
 			compatibilityVersion = "Xcode 10.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -383,6 +385,7 @@
 		};
 		1FEF9C8F1BA833A900372FA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F7CCF9A22FD718A0071F609 /* Config.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -423,6 +426,7 @@
 		};
 		1FEF9C901BA833A900372FA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F7CCF9A22FD718A0071F609 /* Config.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (

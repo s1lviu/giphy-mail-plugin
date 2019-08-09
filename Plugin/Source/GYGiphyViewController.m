@@ -27,8 +27,6 @@
 
 #import "EditingMessageWebView.h"
 
-#define GIPHY_API_KEY   @"***REMOVED***"
-
 @interface GYGiphyViewController ()
 
 @property (strong) AFHTTPSessionManager *sessionManager;
