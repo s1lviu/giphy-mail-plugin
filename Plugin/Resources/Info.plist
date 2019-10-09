@@ -28,6 +28,8 @@
 	<string>[UUIDS_HERE]</string>
 	<key>Supported10.14PluginCompatibilityUUIDs</key>
 	<string>[UUIDS_HERE]</string>
+    <key>Supported10.15PluginCompatibilityUUIDs</key>
+    <string>[UUIDS_HERE]</string>
 	<key>SupportedPluginCompatibilityUUIDs</key>
 	<string>[UUIDS_HERE]</string>
 </dict>
