@@ -29,8 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -48,7 +46,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script: Install Plugin"
-               scriptText = "BUNDLE_PATH=&quot;${USER_LIBRARY_DIR}/Mail/Bundles/&quot;&#10;echo &quot;Installing plugin in ${BUNDLE_PATH}....&quot;&#10;&#10;if [ -d &quot;${BUNDLE_PATH}/${WRAPPER_NAME}&quot; ]; then&#10;rm -rf &quot;${BUNDLE_PATH}/${WRAPPER_NAME}&quot;&#10;fi&#10;&#10;cp -Rf &quot;${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}&quot; &quot;${BUNDLE_PATH}&quot;&#10;">
+               scriptText = "BUNDLE_PATH=&quot;/Library/Mail/Bundles/&quot;&#10;echo &quot;Installing plugin in ${BUNDLE_PATH}....&quot;&#10;&#10;if [ -d &quot;${BUNDLE_PATH}/${WRAPPER_NAME}&quot; ]; then&#10;rm -rf &quot;${BUNDLE_PATH}/${WRAPPER_NAME}&quot;&#10;fi&#10;&#10;cp -Rf &quot;${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}&quot; &quot;${BUNDLE_PATH}&quot;&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -64,7 +62,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script: Move to DataVaults"
-               scriptText = "mailMajorVersion=`defaults read &quot;/Applications/Mail.app/Contents/Info.plist&quot; CFBundleShortVersionString | cut -f1 -d &quot;.&quot; -s`&#10;SIPStatus=`csrutil status | cut -c37-100 | cut -f1 -d .`&#10;&#10;echo &quot;mailMajorVersion: ${mailMajorVersion}&quot;&#10;echo &quot;SIP is $SIPStatus&quot;&#10;&#10;if [[ $mailMajorVersion -ge 12 &amp;&amp; $SIPStatus = &quot;disabled&quot; ]] ; then&#10;&#10;FS_PATH=&quot;${USER_LIBRARY_DIR}/Containers/com.apple.mail/Data/DataVaults/MailBundles${USER_LIBRARY_DIR}/Mail/Bundles/&quot;&#10;echo &quot;Installing in ${FS_PATH}....&quot;&#10;&#10;if [ -d &quot;${FS_PATH}/${WRAPPER_NAME}&quot; ]; then&#10;rm -rf &quot;${FS_PATH}/${WRAPPER_NAME}&quot;&#10;fi&#10;&#10;cp -Rf &quot;${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}&quot; &quot;${FS_PATH}&quot;&#10;&#10;fi&#10;">
+               scriptText = "mailMajorVersion=`defaults read &quot;/System/Applications/Mail.app/Contents/Info.plist&quot; CFBundleShortVersionString | cut -f1 -d &quot;.&quot; -s`&#10;SIPStatus=`csrutil status | cut -c37-100 | cut -f1 -d .`&#10;&#10;echo &quot;mailMajorVersion: ${mailMajorVersion}&quot;&#10;echo &quot;SIP is $SIPStatus&quot;&#10;&#10;if [[ $mailMajorVersion -ge 12 &amp;&amp; $SIPStatus = &quot;disabled&quot; ]] ; then&#10;&#10;FS_PATH=&quot;${USER_LIBRARY_DIR}/Containers/com.apple.mail/Data/DataVaults/MailBundles/Library/Mail/Bundles/&quot;&#10;echo &quot;Installing in ${FS_PATH}....&quot;&#10;&#10;if [ -d &quot;${FS_PATH}/${WRAPPER_NAME}&quot; ]; then&#10;rm -rf &quot;${FS_PATH}/${WRAPPER_NAME}&quot;&#10;fi&#10;&#10;cp -Rf &quot;${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}&quot; &quot;${FS_PATH}&quot;&#10;&#10;fi&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -80,7 +78,7 @@
       <PathRunnable
          runnableDebuggingMode = "0"
          BundleIdentifier = "com.apple.mail"
-         FilePath = "/Applications/Mail.app">
+         FilePath = "/System/Applications/Mail.app">
       </PathRunnable>
       <MacroExpansion>
          <BuildableReference
@@ -91,8 +89,6 @@
             ReferencedContainer = "container:Giphy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

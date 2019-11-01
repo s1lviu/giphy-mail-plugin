@@ -52,7 +52,7 @@
     {
         self.images = [NSMutableArray arrayWithCapacity:30];
         
-        self.sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:@"http://api.giphy.com"]];
+        self.sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:@"https://api.giphy.com"]];
     }
     return self;
 }
@@ -64,6 +64,10 @@
 
 - (void)viewWillAppear {
     [super viewWillAppear];
+}
+
+- (void)awakeFromNib {
+    [self.sponsoringBanner setHidden:NSClassFromString(@"FGMailBundle") != nil];
 }
 
 - (IBAction)search:(id)sender
@@ -123,6 +127,10 @@
         [webView insertNode:imageElement atRange:webView.selectedDOMRange];
     }
     
+}
+
+- (IBAction)showSponsor:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://www.mailbutler.io/?utm_source=inapp&utm_medium=plugin&utm_campaign=giveaway_plugins&utm_content=giphy"]];
 }
 
 #pragma mark Private Methods
