@@ -30,6 +30,7 @@
 
 @property (strong) IBOutlet NSPopover *popover;
 @property (strong) IBOutlet NSImageView *poweredByGiphyOverlay;
+@property (strong) IBOutlet NSBox *sponsoringBanner;
 
 @property (strong) NSMutableArray<NSDictionary*>* images;
 
@@ -37,4 +38,5 @@
 
 - (IBAction)search:(id)sender;
 - (IBAction)insertImage:(id)sender;
+- (IBAction)showSponsor:(id)sender;
 @end

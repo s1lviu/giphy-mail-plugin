@@ -76,10 +76,11 @@
 }
 
 - (NSImage*) image {
-    if(self.imageAvailable)
+    if(self.imageAvailable) {
         return [super image];
-    else
+    } else {
         return [PLUGIN_BUNDLE imageForResource:@"Giphy"];
+    }
 }
 
 #pragma mark Private Methods
